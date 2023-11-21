@@ -94,35 +94,35 @@
     <table dir="rtl" class="content">
       <tr>
         <td colspan="2" align="center" style="border-bottom: 1px solid #666;">
-          <strong>پیدا کردن آی‌پی تمیز کلادفلر</strong>
+          <strong>优选 Cloudflare IP</strong>
         </td>
       </tr>
       <tr>
         <td>
-          <label>تعداد آی‌پی: <input type="number" id="max-ip" min="1" max="5000" /></label>
+          <label>IP数量: <input type="number" id="max-ip" min="1" max="5000" /></label>
         </td>
         <td>
-          <label>تاخیر مجاز: <input type="number" id="max-latency" min="50" max="3000" step="50"/></label>
+          <label>延迟: <input type="number" id="max-latency" min="50" max="3000" step="50"/></label>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-          <label>عبارت منظم: <input type="text" dir="ltr" id="ip-regex" placeholder="^104\.17\.|^141\." /></label>
+          <label>IP范围: <input type="text" dir="ltr" id="ip-regex" placeholder="^104\.17\.|^141\." /></label>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-          <label>فقط از این رنج آی‌پی: <input type="text" dir="ltr" id="ip-include" placeholder="104.17,141" /></label>
+          <label>包含IP: <input type="text" dir="ltr" id="ip-include" placeholder="104.17,141" /></label>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-          <label>شامل این رنج آی‌پی نشود: <input type="text" dir="ltr" id="ip-exclude" placeholder="8,103.22" /></label>
+          <label>排除IP: <input type="text" dir="ltr" id="ip-exclude" placeholder="8,103.22" /></label>
         </td>
       </tr>
       <tr>
         <td>
-          <a href="ip-list.html" target="_blank">مشاهده‌ی رنج‌ها</a>
+          <a href="ip-list.html" target="_blank">浏览IP</a>
         </td>
         <td>
           <button id="btn-start" class="start" onclick="startScan()">شروع</button>
@@ -131,7 +131,7 @@
       </tr>
     </table>
     <div class="text-div" style="border-top: 1px solid #666; background: white;">
-      <div id="start-hint" style="color: red;">قبل از شروع vpn خود را خاموش کنید!</div>
+      <div id="start-hint" style="color: red;">测试前关闭本地VPN</div>
       <div style="width: 110px; float: right;"><span id="test-no"></span></div>
       <div style="width: 120px; float: right;"><span id="ip-no"></span></div>
       <div style="width: 30px; float: right;"><span id="ip-try"></span></div>
@@ -144,10 +144,10 @@
             #
           </th>
           <th width="150">
-            آی پی
+            有效IP
           </th>
           <th width="80">
-            تاخیر
+            延迟
           </th>
           <th width="60">
             <a class="download-link" href="#" onclick="downloadAsCSV()">
